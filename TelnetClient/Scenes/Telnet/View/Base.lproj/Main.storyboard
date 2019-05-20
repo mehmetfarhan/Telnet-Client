@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Telnet View Controller-->
+        <scene sceneID="aQg-vI-gM7">
+            <objects>
+                <viewController storyboardIdentifier="TelnetViewController" id="Kbb-Id-Y6S" customClass="TelnetViewController" customModule="TelnetExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zkf-wZ-8PY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-El-gbZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJy-h9-C9n">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.47458738088607788" green="0.98441618680953979" blue="0.30947035551071167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Kbb-Id-Y6S" id="gXb-jT-045"/>
+                                        </connections>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BtY-hp-AOc">
+                                        <rect key="frame" x="0.0" y="852" width="414" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="IE6-85-5p5"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QJy-h9-C9n" firstAttribute="top" secondItem="mrj-El-gbZ" secondAttribute="top" id="PQi-I2-roK"/>
+                                    <constraint firstItem="BtY-hp-AOc" firstAttribute="leading" secondItem="mrj-El-gbZ" secondAttribute="leading" id="WJn-Lh-Hdh"/>
+                                    <constraint firstAttribute="trailing" secondItem="QJy-h9-C9n" secondAttribute="trailing" id="WaI-qr-LuB"/>
+                                    <constraint firstAttribute="bottom" secondItem="BtY-hp-AOc" secondAttribute="bottom" id="fZY-j2-pnG"/>
+                                    <constraint firstAttribute="trailing" secondItem="BtY-hp-AOc" secondAttribute="trailing" id="gnn-E5-RBm"/>
+                                    <constraint firstItem="QJy-h9-C9n" firstAttribute="leading" secondItem="mrj-El-gbZ" secondAttribute="leading" id="rad-q9-dIJ"/>
+                                    <constraint firstItem="BtY-hp-AOc" firstAttribute="top" secondItem="QJy-h9-C9n" secondAttribute="bottom" id="xgW-9e-r0U"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="mrj-El-gbZ" firstAttribute="top" secondItem="p4v-xT-BkM" secondAttribute="top" id="1jL-6d-Frq"/>
+                            <constraint firstAttribute="trailing" secondItem="mrj-El-gbZ" secondAttribute="trailing" id="NcJ-9L-km5"/>
+                            <constraint firstItem="mrj-El-gbZ" firstAttribute="leading" secondItem="Zkf-wZ-8PY" secondAttribute="leading" id="WmN-q5-nPI"/>
+                            <constraint firstAttribute="bottom" secondItem="mrj-El-gbZ" secondAttribute="bottom" id="XB8-Rb-yMv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p4v-xT-BkM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jel-hP-56P"/>
+                    <connections>
+                        <outlet property="textField" destination="BtY-hp-AOc" id="NlL-JF-v9t"/>
+                        <outlet property="textView" destination="QJy-h9-C9n" id="Dsu-Pt-6Kh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6Z-Te-LlI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2685.507246376812" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
