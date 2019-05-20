@@ -13,7 +13,7 @@
         <!--Telnet View Controller-->
         <scene sceneID="aQg-vI-gM7">
             <objects>
-                <viewController storyboardIdentifier="TelnetViewController" id="Kbb-Id-Y6S" customClass="TelnetViewController" customModule="TelnetExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TelnetViewController" id="Kbb-Id-Y6S" customClass="TelnetViewController" customModule="TelnetClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zkf-wZ-8PY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-El-gbZ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJy-h9-C9n">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJy-h9-C9n">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <color key="textColor" red="0.47458738088607788" green="0.98441618680953979" blue="0.30947035551071167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

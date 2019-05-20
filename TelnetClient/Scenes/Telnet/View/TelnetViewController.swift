@@ -29,7 +29,7 @@ final class TelnetViewController: UIViewController {
 
 // MARK: - TextView Helper
 
-extension TelnetViewController {
+private extension TelnetViewController {
     
     func changeContentInsetOfTextView() {
         var inset: UIEdgeInsets = .zero
@@ -85,6 +85,7 @@ extension TelnetViewController: TelnetPresentation {
     }
 }
 
+// MARK: - UITextField Delegate
 
 extension TelnetViewController: UITextFieldDelegate {
     func textField(
